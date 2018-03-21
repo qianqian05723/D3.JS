@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+    <p>这里需要填写的文字1</p>
+    <p>这里需要填写的文字2</p>
+</body>
+<script src="../../Public/d3js/d3.min.js"></script>
+<script>
+    window.onload = function(){
+        var p = d3.select("body")
+            .selectAll("p")//指定要操作的DOM对象
+            .text("hello world")//设置新增DOM对象的文本
+
+        p.style("color","red")
+         .style("font-size","24px")
+    };
+</script>
+</html>
